@@ -1,0 +1,6 @@
+/* Ganti URL gambar lama dengan URL baru */
+.driver-image {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('img/2025redbullracingcarright.avif');
+    background-size: cover;
+    background-position: center;
+}
