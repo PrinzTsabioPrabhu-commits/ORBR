@@ -84,8 +84,8 @@
     </style>
 </head>
 <body class="bg-gray-900 text-white">
-    <header class="sticky top-0 z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800  3">
-        <div class="container mx-auto px-4 py-4">
+    <header class="sticky top-0 z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800">
+        <div class="container mx-auto px-4 py-4 max-w-7xl">
             <div class="flex justify-between items-center">
                 <div class="flex items-center space-x-2">
                     <div class="w-12 h-12 flex items-center justify-center">
@@ -113,7 +113,7 @@
 
     <section id="home" class="relative overflow-hidden">
         <div class="red-bull-gradient">
-            <div class="container mx-auto px-4 py-20 md:py-32 flex flex-col md:flex-row items-center">
+            <div class="container mx-auto px-4 py-20 md:py-32 flex flex-col md:flex-row items-center max-w-7xl">
                 <div class="md:w-1/2 mb-10 md:mb-0">
                     <div class="inline-block px-4 py-2 bg-gray-900 rounded-full mb-6">
                         <span class="text-sm font-bold text-red-400">F1 WORLD CHAMPIONS 2021 - 2023</span>
@@ -141,7 +141,7 @@
         </div>
         
         <div class="bg-gray-800 py-6">
-            <div class="container mx-auto px-4">
+            <div class="container mx-auto px-4 max-w-7xl">
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
                     <div class="text-center">
                         <div class="text-3xl md:text-4xl font-bold text-red-500">6</div>
@@ -165,7 +165,7 @@
     </section>
 
     <section id="drivers" class="py-20 driver-image">
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto px-4 max-w-7xl">
             <div class="text-center mb-16">
                 <h2 class="racing-font text-4xl md:text-5xl mb-4">MEET THE <span class="text-red-500">DRIVERS</span></h2>
                 <p class="text-gray-300 max-w-2xl mx-auto">Our championship-winning drivers combine raw talent with technical precision to deliver exceptional performance on the track.</p>
@@ -287,7 +287,7 @@
     </section>
 
     <section id="performance" class="py-20 bg-gray-900">
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto px-4 max-w-7xl">
             <div class="text-center mb-16">
                 <h2 class="racing-font text-4xl md:text-5xl mb-4">SEASON <span class="text-red-500">PERFORMANCE</span></h2>
                 <p class="text-gray-300 max-w-2xl mx-auto">Red Bull Racing's dominance is built on technical innovation, strategic excellence, and relentless pursuit of perfection.</p>
@@ -374,7 +374,7 @@
     </section>
 
     <section id="calendar" class="py-20 track-image">
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto px-4 max-w-7xl">
             <div class="text-center mb-16">
                 <h2 class="racing-font text-4xl md:text-5xl mb-4">RACE <span class="text-red-500">CALENDAR</span></h2>
                 <p class="text-gray-300 max-w-2xl mx-auto">Follow Oracle Red Bull Racing through the 2025 Formula 1 World Championship season.</p>
@@ -448,7 +448,7 @@
     </section>
 
     <footer class="bg-gray-950 py-12">
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto px-4 max-w-7xl">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-8 md:mb-0">
                     <div class="flex items-center space-x-2 mb-6">
@@ -527,8 +527,9 @@
                 
                 const targetElement = document.querySelector(targetId);
                 if (targetElement) {
+                    // Penyesuaian offset 80px untuk header sticky
                     window.scrollTo({
-                        top: targetElement.offsetTop - 80,
+                        top: targetElement.offsetTop - 80, 
                         behavior: 'smooth'
                     });
                 }
